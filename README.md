@@ -4,7 +4,7 @@ This is my custom GMMK Pro configuration with the knob volume enabled.
 
 VIA software is not enabled in this version.
 
-![image](keymap-layout.png)
+![image](matt-keymap-layout.png)
 
 ## Install QMK tools and configure everything
 
