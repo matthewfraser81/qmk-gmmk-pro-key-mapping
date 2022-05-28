@@ -32,22 +32,17 @@ cd ~/qmk-gmmk-pro-key-mapping
 cp -r default-with-knob ~/qmk_firmware/keyboards/gmmk/pro/ansi/keymaps/
 ```
 
-Set the default keyboard and keymap to the custom keymap:
-
-```bash
-qmk config user.keyboard=gmmk/pro/ansi
-qmk config user.keymap=default-with-knob
-```
-
 Compile the GMMK Pro firmware with the custom keymap:
 
 ```bash
-cd ~/qmk_firmware
-qmk compile
+qmk compile -kb gmmk/pro/ansi -km matt-with-knob
 ```
 
-Once the firmware is built, you can flash the file `gmmk_pro_ansi_default-with-knob.bin` using QMK Toolbox.
 To enter QMK flash mode (DFU) you need to press the keys `FN+\`.
+
+```bash
+qmk flash -kb gmmk/pro/ansi -km matt-with-knob
+```
 
 ## Extra useful commands
 
